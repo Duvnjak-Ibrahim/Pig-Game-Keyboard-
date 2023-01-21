@@ -318,3 +318,5 @@ document.querySelector(".enter").addEventListener("click",function(){
     //  WHEN U TYPE NAME CORRECTLY ENOUGH 
     //  THIS WILL TAKE VALUES FORM INPUTS AND PUT THEM IN GAME
 })
+
+console.log("hello yo");
