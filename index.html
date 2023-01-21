@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="images/x-icon" href="/Pig game/icons8-dice-16.png" />
+    <link rel="icon" type="images/x-icon" href="/images/icons8-dice-16.png" />
     <title>Pig Game</title>
   </head>
   <body>
@@ -27,14 +27,14 @@
         </div>
       </section>
      
-      <img src="dice-1.png" alt="1" class="dice hidden" />
+      <img src="/images/dice-1.png" alt="1" class="dice " />
       
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
   
-    <div class="pop-up ">
+    <div class="pop-up hidden">
       <button class="x">x</button>
       <h1>How to Play</h1>
       <p>*Winner is first one to have "30 Points in SCORE",</p>
@@ -63,15 +63,15 @@
         <li></li>
       </ul>
     </div>
-    <div class="blackish "></div>
-    <div class="nameData">
+    <div class="blackish hidden"></div>
+    <div class="nameData hidden">
       <h1>Choose your names</h1>
       <input type="text" placeholder="Player1 NAME" maxlength="8" class="name1" onkeydown="return /[a-z]/i.test(event.key)">
       <input type="text" placeholder="Player2 NAME" maxlength="8" class="name2" onkeydown="return /[a-z]/i.test(event.key)">
       <button class="enter">Enter Names</button>
       <p>*It will not work if names are <span class="red">SAME</span> or if there is <span class="red">NO</span> name/s,<br>*Names don't have numbers</p>
     </div>
-    <div class="loading"><h1>Loading...</h1></div>
+    <div class="loading hidden"><h1>Loading...</h1></div>
     <script src="script.js"></script>
   </body>
 </html>

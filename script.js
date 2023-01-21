@@ -26,13 +26,14 @@ let isPrepared = false
 // ************************
 rollDice.addEventListener('click', function () {
   if(isPrepared == true){
+    
     if(playerWon == false){
   if (score1 !== 1 && player1Turn == true) {
     score1 = Math.floor(Math.random() * 6) + 1;
     sum += score1;
     currentScore1.textContent = sum;
 
-    dice.src = `dice-${score1}.png`;
+    dice.src = `/images/dice-${score1}.png`;
     dice.classList.remove('hidden');
 
 
@@ -45,7 +46,7 @@ rollDice.addEventListener('click', function () {
     sum += score2;
     currentScore2.textContent = sum;
 
-    dice.src = `dice-${score2}.png`;
+    dice.src = `/images/dice-${score2}.png`;
     dice.classList.remove('hidden');
    
 
@@ -61,7 +62,7 @@ rollDice.addEventListener('click', function () {
     player1Active.classList.remove('player--active');
     player2Active.classList.add('player--active');
 
-    dice.src = `dice-${1}.png`;
+    dice.src = `/images/dice-${1}.png`;
     dice.classList.remove('hidden');
 
    
@@ -77,7 +78,7 @@ rollDice.addEventListener('click', function () {
     player1Active.classList.add('player--active');
     player2Active.classList.remove('player--active');
 
-    dice.src = `dice-${1}.png`;
+    dice.src = `/images/dice-${1}.png`;
     dice.classList.remove('hidden');
 
    
@@ -162,7 +163,7 @@ document.addEventListener("keydown",function(e){
           sum += score1;
           currentScore1.textContent = sum;
       
-          dice.src = `dice-${score1}.png`;
+          dice.src = `/images/dice-${score1}.png`;
           dice.classList.remove('hidden');
     }
     if (score1 === 1) {
@@ -175,7 +176,7 @@ document.addEventListener("keydown",function(e){
       player1Active.classList.remove('player--active');
       player2Active.classList.add('player--active');
   
-      dice.src = `dice-${1}.png`;
+      dice.src = `/images/dice-${1}.png`;
       dice.classList.remove('hidden')
   }
 }
@@ -213,7 +214,7 @@ if(e.key === "o"){
       sum += score2;
       currentScore2.textContent = sum;
   
-      dice.src = `dice-${score2}.png`;
+      dice.src = `/images/dice-${score2}.png`;
       dice.classList.remove('hidden');
      
   
@@ -229,7 +230,7 @@ if(e.key === "o"){
       player1Active.classList.add('player--active');
       player2Active.classList.remove('player--active');
   
-      dice.src = `dice-${1}.png`;
+      dice.src = `/images/dice-${1}.png`;
       dice.classList.remove('hidden');
   
      
@@ -278,7 +279,9 @@ if(e.key === "h"){
   
    // NEW Game 
 }
-  }
+
+  } 
+
 })
 
 
